@@ -7,6 +7,7 @@ while read line; do
   then
     echo "<br>" >> $2
     echo "<br>" >> $2
+    echo "" >> $2
   fi
   for i in "${linearr[@]}"; do
     len=${#i}
