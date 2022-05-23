@@ -13,6 +13,6 @@ while read line; do
     cut=$((len/threshold + 1))
     bold=${i:0:cut}
     rest=${i:cut:len-cut}
-    echo "<b>$bold</b>$rest" >> $2
+    echo -n "<b>$bold</b>$rest " >> $2
   done
 done <$1
